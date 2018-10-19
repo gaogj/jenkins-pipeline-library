@@ -43,7 +43,7 @@ class Git implements Serializable {
      * <ul>
      *     <li>Checkout: ***REMOVED***</li>
      *     <li>Get credentials from Jenkins</li>
-     *     <li>Push to https://{user}:{pass}@***REMOVED***.***REMOVED***:7999/scm/~***REMOVED***/pipeline-from-scm-tests.git </li>
+     *     <li>Push to https://{user}:{pass}@***REMOVED***.***REMOVED***:7999/scm/~***REMOVED***\/pipeline-from-scm-tests.git </li>
      *  </ul>
      *
      * @param tagName
@@ -59,7 +59,7 @@ class Git implements Serializable {
         /*
          * example:
          * from: ***REMOVED***
-         * to: https://{user}:{pass}@***REMOVED***.***REMOVED***:7999/scm/~***REMOVED***/pipeline-from-scm-tests.git
+         * to: https://{user}:{pass}@***REMOVED***.***REMOVED***:7999/scm/~***REMOVED***\/pipeline-from-scm-tests.git
          *
         */
         def urlFile = steps.readFile 'url.txt'
