@@ -21,7 +21,7 @@ class SonarQube implements Serializable {
      * @param sonarSkipModules a semi-colon separated list of maven modules that should not be analysed
      * @param util Utilities class
      */
-    void sonarAnalysis(MavenBuildInfo mavenBuildInfo, Utilities util, Maven maven) {
+    void sonarAnalysis(MavenBuildInfo mavenBuildInfo, Utilities util) {
         assert mavenBuildInfo.pom: 'Pom data is not present!'
         assert mavenBuildInfo.sonarSkipModules: 'sonarSkipModules data is not present!'
         assert mavenBuildInfo.sonarQubeWithRunner: 'sonarQubeWithRunner data is not present!'
